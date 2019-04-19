@@ -1,0 +1,222 @@
+leaflet-control-attribution.leaflet-control {
+    display: none;
+}
+
+.leaflet-popup pop.leaflet-zoom-animated {
+    opacity: 0.3;
+}
+
+.leaflet-control-container .leaflet-control-zoom-in {
+
+    background-color: rgb(110, 110, 110, 0.3);
+    font-color: #ffff;
+}
+
+.leaflet-control-container .leaflet-control-zoom-out {
+    background-color: rgb(110, 110, 110, 0.3);
+    font-color: #ffff;
+    transition: color 6s ease-in 6s; ;
+}
+
+div.info.leaflet-control {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+
+}
+
+.economica-font {
+    font-family: "Economica", sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.leaflet-popup-content-wrapper {
+    opacity: 0.5
+}
+
+.leaflet-popup-tip {
+    opacity: 0.5
+}
+
+.pop {
+    opacity: 0.5;
+}
+
+.backers-icon {
+    background-color: red;
+    max-width: 3em;
+    max-height: 3em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.info {
+    /*padding-left: 2em;*/
+    color: #ffffff;
+    font-size: 12px;
+    background-color: rgb(12, 12, 15, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    /*width: 43vh;
+    height: 20vh;*/
+    border-radius: 0.1em;
+}
+
+.info-heading {
+    display: block;
+    padding-top: 0.5em;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+}
+
+.font-desc {
+    font-size: 1.7em;
+}
+.font-desc-sec {
+    font-size: 1.2em;
+}
+
+.font-mobile {
+   font-size: 2.3em;
+}
+
+.font-desktop {
+    font-size: 2.2em;
+}
+
+.animation {
+    transition: fill 3s ease-in 2s;
+}
+
+.date {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.highlight {
+    background-color: green;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+
+
+
+path {
+    fill: rgb(0,0,0, 0.3);
+    transition: 2s fill ease-out;
+}
+
+path:hover {
+    fill: rgb(57, 233, 231);
+    transition: .5s all ease-in;
+}
+
+span {
+    transition: all 3s ease-out 2s;
+}
+
+div.odometer-inside {
+    margint.left: 0.4em;
+}
+
+span.country {
+    margin-bottom: 3em;
+}
+
+span.odometer {
+    margin-left: 1.8em;
+    padding-left: 2em;
+    display: inline;
+    position: relative;
+}
+
+span.odometer.backers {
+    margin-top: 0.4em
+}
+
+span.odometer.sales {
+   margin-left: 0.8em;
+}
+
+span.odometer.backers::before {
+    content: 'Backers: ';
+    font-size: 1.3em;
+    margin-left: -3em;
+    display: inline;
+    position: absolute;
+    margin-top: -0.2em;
+}
+
+span.sales.odometer.odometer-auto-theme > div.odometer-inside {
+   margin-left: 0.5em;
+}
+
+
+span.odometer.sales::before {
+    content: ' Sales: $';
+    font-size: 1.3em;
+    margin-left: -2.1em;
+    display: inline;
+    position: absolute;
+    margin-top: -0.2em;
+}
+
+/*
+pulsating icon
+*/
+
+.leaflet-pulsing-icon {
+    border-radius: 100%;
+    box-shadow: 1px 1px 8px 0 rgba(0,0,0,0.75);
+}
+
+.leaflet-pulsing-icon:after {
+    content: "";
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    height: 300%;
+    width: 300%;
+    position: absolute;
+    margin: -100% 0 0 -100%;
+
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+    50% {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+}
+
+.sep{
+    border: 0;
+    width: 3em;
+    height: 1px;
+    margin: 1em 0;
+    background-color: rgba(255,255,255,0.4);
+}
+

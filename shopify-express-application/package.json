@@ -1,0 +1,20 @@
+{
+  "name": "shopify-express-application",
+  "version": "1.0.0",
+  "description": "shopify node test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "nonce": "^1.0.4",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
